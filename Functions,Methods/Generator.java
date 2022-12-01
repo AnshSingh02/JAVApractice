@@ -2,11 +2,11 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Generator {
-    Alphabet alphabet;
+    Alphabet alphabet; 
     public static Scanner keyboard;
 
     public Generator(Scanner scanner) {
-        keyboard = scanner;
+        keyboard = scanner; 
     }
 
     public Generator(boolean IncludeUpper, boolean IncludeLower, boolean IncludeNum, boolean IncludeSym) {
@@ -52,7 +52,7 @@ public class Generator {
         final int alphabetLength = alphabet.getAlphabet().length();
 
         int max = alphabetLength - 1;
-        int min = 0;
+        int min = 0; 
         int range = max - min + 1;
 
         for (int i = 0; i < length; i++) {
