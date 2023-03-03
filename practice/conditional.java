@@ -11,4 +11,5 @@ public class conditional  {
      }
      System.out.println(salary);
     }
+    
 }
