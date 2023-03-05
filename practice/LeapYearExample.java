@@ -6,5 +6,8 @@ public class LeapYearExample {
         } else {
             System.out.println("COMMON YEAR");
         }
+
+
+        
     }
 }
