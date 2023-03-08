@@ -9,6 +9,8 @@ public class Reverse{
             ans = ans * 10 + rem ;
 
         }
+       
+       
         System.out.println(ans);
     }
 }
