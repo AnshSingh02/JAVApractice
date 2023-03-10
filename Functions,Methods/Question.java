@@ -16,6 +16,8 @@ static boolean isPrime(int n){
             return false;
         }
         c++;
+
+        
     }
      return c * c > n;
 
