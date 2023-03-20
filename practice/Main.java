@@ -1,17 +1,22 @@
+import java.util.Vector;
+
 class Main {
-  private String name;
+    public static void main(String[] args) {
+        Vector<String> mammals= new Vector<>();
 
-  // constructor
-  Main() {
-    System.out.println("Constructor Called:");
-    name = "Programiz";
-  }
+        // Using the add() method
+        mammals.add("Dog");
+        mammals.add("Horse");
 
-  public static void main(String[] args) {
+        // Using index number
+        mammals.add(2, "Cat");
+        System.out.println("Vector: " + mammals);
 
-    // constructor is invoked while
-    // creating an object of the Main class
-    Main obj = new Main();
-    System.out.println("The name is " + obj.name);
-  }
+        // Using addAll()
+        Vector<String> animals = new Vector<>();
+        animals.add("Crocodile");
+
+        animals.addAll(mammals);
+        System.out.println("New Vector: " + animals);
+    }
 }
