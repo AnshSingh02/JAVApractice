@@ -6,6 +6,8 @@ class LinkedList {
 		int data;
 		Node next;
 
+		
+
 		// Constructor to create a new node
 		// Next is by default initialized
 		// as null
