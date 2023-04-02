@@ -1,22 +1,60 @@
-import java.util.Vector;
+import java.util.Scanner;
 
 class Main {
-    public static void main(String[] args) {
-        Vector<String> mammals= new Vector<>();
+  
+  public static void main(String[] args) {
 
-        // Using the add() method
-        mammals.add("Dog");
-        mammals.add("Horse");
+    char operator;
+    Double number1, number2, result;
 
-        // Using index number
-        mammals.add(2, "Cat");
-        System.out.println("Vector: " + mammals);
+    // create an object of Scanner class
+    Scanner input = new Scanner(System.in);
+    
 
-        // Using addAll()
-        Vector<String> animals = new Vector<>();
-        animals.add("Crocodile");
+    
 
-        animals.addAll(mammals);
-        System.out.println("New Vector: " + animals);
+    // ask users to enter operator
+    System.out.println("Choose an operator: +, -, *, or /");
+    operator = input.next().charAt(0);
+
+    // ask users to enter numbers
+    System.out.println("Enter first number");
+    number1 = input.nextDouble();
+
+    System.out.println("Enter second number");
+    number2 = input.nextDouble();
+
+    switch (operator) {
+
+      // performs addition between numbers
+      case '+':
+        result = number1 + number2;
+        System.out.println(number1 + " + " + number2 + " = " + result);
+        break;
+
+      // performs subtraction between numbers
+      case '-':
+        result = number1 - number2;
+        System.out.println(number1 + " - " + number2 + " = " + result);
+        break;
+
+      // performs multiplication between numbers
+      case '*':
+        result = number1 * number2;
+        System.out.println(number1 + " * " + number2 + " = " + result);
+        break;
+
+      // performs division between numbers
+      case '/':
+        result = number1 / number2;
+        System.out.println(number1 + " / " + number2 + " = " + result);
+        break;
+
+      default:
+        System.out.println("Invalid operator!");
+        break;
     }
+
+    input.close();
+  }
 }
