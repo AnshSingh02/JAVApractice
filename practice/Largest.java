@@ -1,16 +1,22 @@
- import java.util.Scanner;
- public class Largest{
+import java.util.Scanner;
+public class Largest{
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        
-        if (a>b){
-            System.out.println("A is largest");
-            
+        Scanner in = new Scanner(System.in);
+        int a=in.nextInt();
+        int b=in.nextInt();
+        int c=in.nextInt();
+
+        if((a>=b)&&(a>=c)){
+            System.out.println("a is largest");
         }
-        else{
-            System.out.println("B is Largest");
+        else if(b>=c){
+            System.out.println("b is largest");
+
+        }
+        else {
+            System.out.println("c is largest");
+
+
         }
     }
- }
+}
