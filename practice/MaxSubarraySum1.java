@@ -8,6 +8,10 @@ public class MaxSubarraySum1
         System.out.println("Enter number of elements in array");
         int N = scan.nextInt();
         int[] arr = new int[ N ];
+
+
+
+        
         /* Accept N elements */
         System.out.println("Enter "+ N +" elements");
         for (int i = 0; i < N; i++)
