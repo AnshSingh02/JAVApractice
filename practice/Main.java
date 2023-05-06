@@ -1,13 +1,14 @@
-import java.util.Scanner;
-public class main {
-    public static void main(String[] args) {
-        Scanner in =in.nextInt();
-        
-        int a =in.nextInt();
-        int b =in.nextInt();
+class Main {
+  public static void main(String[] args) {
+    
+    // create strings
+    String first = "Java";
+    String second = "Python";
+    String third = "JavaScript";
 
-    int sum = a+b;
-
-    System.out.println("sum");
-    }
+    // print strings
+    System.out.println(first);   // print Java
+    System.out.println(second);  // print Python
+    System.out.println(third);   // print JavaScript
+  }
 }
