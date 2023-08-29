@@ -5,7 +5,7 @@ import java.util.*;
                 int start = 0, end = numbers.length - 1;
         
                 while (start <= end) {
-                    int mid = (start + end) / 2;
+                    int mid = (start + end)/ 2;
         
                     if (numbers[mid] == key) {
                         return mid;
