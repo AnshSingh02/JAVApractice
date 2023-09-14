@@ -1,19 +1,18 @@
 import java.util.*;
 
-public class ArrayCC {
-    public static void update(int marks[]) {
-        for (int i = 0; i < marks.length; i++) {
-            marks[i] = marks[i] + 1;
+public class ArrayCC{
+ public static int getLargest(int arr[]){
+    int largest = Integer.MIN_VALUE;
+
+    for (int  i = 0 ; i < arr.length; i++){
+        if (largest < arr[i]){
+            largest = arr[i];
         }
     }
-
-    public static void main(String args[]) {
-        int marks[] = {97, 98, 99};
-        update(marks);
-
-        for (int i = 0; i < marks.length; i++) {
-            System.out.print(marks[i] + " ");
-        }
-        System.out.println();
-    }
+    return largest;
+ }
+ public static void main(String args[]){
+    int arr[] = { 2, 4, 6, 8};
+    System.out.println("largest value ; "+getLargest(arr));
+ }
 }
